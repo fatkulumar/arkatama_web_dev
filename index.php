@@ -10,7 +10,7 @@
 
     <div>
         <form action="" method="post">
-            <input type="text" name="data" value="FATKUL UMAR 26 KABUPATEN NGAWI">
+            <input type="text" name="data" value="fatkul umar 26 kabupaten ngawi">
             <button type="submit" name="simpan">Simpan</button>
         </form>
     </div>
@@ -48,7 +48,7 @@
         }
 
         $nama =  strtoupper($name);
-        $umur =  strtoupper($age) . " ";
+        $umur =  $age . " TAHUN";
         $kota = strtoupper($city);
         $insert = mysqli_query($koneksi, "INSERT INTO `tb_arkatama`(`name`, `age`, `city`) VALUES ('$nama','$umur','$kota')");
     }
